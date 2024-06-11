@@ -9,7 +9,9 @@
 /* Aqui todos os títulos h3 terão um mesmo tamanho, dentro da section informacoes__gerais. */
 .informacoes__gerais h3 {
     font-size: 32px;
-    margin-top: 50px;
+}
+.cor__fundo {
+    padding: 64px;
 }
 .cor__fundo:nth-child(odd) {
     display: flex;
@@ -18,13 +20,9 @@
     background-color: #eaf2fd;
     width: 100%;
 }
-.sobre__mim {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 1136px;
-}
-.skills__hobbies {
+.sobre__mim,
+.skills__hobbies,
+.formacao__academica {
     display: flex;
     flex-direction: column;
     justify-content: center;
