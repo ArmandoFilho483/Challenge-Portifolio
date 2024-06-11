@@ -1,0 +1,13 @@
+/* RODAPÉ */
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    gap: 15px;
+    height: 88px;
+    width: 100%;
+    bottom: 0;
+}

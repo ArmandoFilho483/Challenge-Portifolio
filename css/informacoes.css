@@ -1,0 +1,38 @@
+.apresentacao__foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.apresentacao__foto__div {
+    display: flex;
+    gap: 15px;
+    max-width: 1136px;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.titulo__apresentacao {
+    width: 100%;
+    font-size: 52px;
+}
+
+.texto__sobre__mim {
+
+}
+
+.lista__redes__sociais {
+    display: flex;
+    gap: 32px;
+}
+
+.foto__perfil img {
+    width: 368px;
+    height: 368px;
+    border-radius: 90%;
+}
