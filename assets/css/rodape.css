@@ -5,9 +5,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: grey;
+    background-color: black;
+    color: white;
     gap: 15px;
     height: 88px;
     width: 100%;
     bottom: 0;
+    left:0;
 }

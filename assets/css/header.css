@@ -1,0 +1,46 @@
+/* MENU */
+
+header {
+    position: fixed;
+    display: flex;
+    height: 88px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* meu nome */
+.meu__nome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+}
+h1 > img {
+    height: 24px;
+    margin-right: 8px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1136px;
+    font-family: "Raleway", sans-serif;
+    background-color: #eeeeee;
+}
+.lista__menu {
+    display: flex;
+    flex-direction: inline;
+    gap: 32px;
+    font-size: 16px;
+}
+.item__menu:hover {
+    text-shadow: 2px 2px 4px solid rgba(200, 200, 200, 0.4);
+    transition: 0.5s;
+}

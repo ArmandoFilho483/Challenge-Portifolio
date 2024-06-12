@@ -4,29 +4,36 @@
     align-items: center;
     width: 100%;
 }
-
 .apresentacao__foto__div {
     display: flex;
     gap: 15px;
     max-width: 1136px;
 }
-
 .apresentacao {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
-
 .titulo__apresentacao {
     width: 100%;
     font-size: 52px;
 }
 
+/* LINKS DAS REDES SOCIAIS */
 .lista__redes__sociais {
     display: flex;
     gap: 32px;
 }
+.lista__redes__sociais > li > a {
+    display: flex;
+    align-items: center;
+}
+a > img {
+    height: 24px;
+    margin-left: 4px;
+}
 
+/* FOTO REDONDA DO MEU PERFIL */
 .foto__perfil img {
     width: 368px;
     height: 368px;
