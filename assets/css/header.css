@@ -13,18 +13,20 @@ header {
     left: 0;
 }
 
-/* meu nome */
+/* MEU NOME NA NAVBAR */
 .meu__nome {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: "Raleway", sans-serif;
 }
+/* IMAGEM DAS ESTRELAS AO LADO DO MEU NOME */
 h1 > img {
     height: 24px;
     margin-right: 8px;
 }
 
+/* CONFIGURAÇÕES DO MENU. */
 .menu {
     display: flex;
     align-items: center;
@@ -39,8 +41,4 @@ h1 > img {
     flex-direction: inline;
     gap: 32px;
     font-size: 16px;
-}
-.item__menu:hover {
-    text-shadow: 2px 2px 4px solid rgba(200, 200, 200, 0.4);
-    transition: 0.5s;
 }

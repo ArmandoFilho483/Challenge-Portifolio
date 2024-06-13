@@ -17,6 +17,7 @@
 .titulo__apresentacao {
     width: 100%;
     font-size: 52px;
+    line-height: 50px;
 }
 
 /* LINKS DAS REDES SOCIAIS */
@@ -28,6 +29,8 @@
     display: flex;
     align-items: center;
 }
+
+/* FLECHAS AO LADO DOS LINKS DAS REDES SOCIAIS. */
 a > img {
     height: 24px;
     margin-left: 4px;
@@ -35,7 +38,8 @@ a > img {
 
 /* FOTO REDONDA DO MEU PERFIL */
 .foto__perfil img {
-    width: 368px;
-    height: 368px;
+    width: 268px;
+    height: 268px;
     border-radius: 90%;
+    margin: 10px;
 }

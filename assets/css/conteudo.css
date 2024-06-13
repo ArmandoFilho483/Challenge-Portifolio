@@ -9,23 +9,28 @@ main {
     align-items: center;
     width: 100%;
 }
-/* Aqui todos os títulos h3 terão um mesmo tamanho, dentro da section informacoes__gerais. */
+/* TEXTOS H3 COM MESMO TAMANHO*/
 .informacoes__gerais h3 {
     font-size: 32px;
 }
+
+/* NESSE TRECHO SE MUDAM AS CORES DE FUNDO DAS SESSÕES, ENTRE CINZA E AZUL */
 .cor__fundo {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 64px;
+    width: 100%;
+    box-sizing: border-box;
 }
 .cor__fundo:nth-child(odd) {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #eaf2fd;
-    width: 100%;
 }
+
+/* ESSA PARTE DEIXA O CONTEÚDO NA PARTE DO MEIO DA TELA. */
 .sobre__mim,
 .skills__hobbies,
 .formacao__academica,
@@ -40,9 +45,8 @@ main {
 .sobre__mim > img {
     height: 104px;
 }
-#hobbies {
-    margin-top: 48px;
-}
+
+/* ORGANIZAÇÃO DOS QUADRADOS DAS SKILLS E HOBBIES */
 .organizacao__quadrado {
     display: flex;
     flex-wrap: wrap;
@@ -58,10 +62,45 @@ main {
     background-color: white;
     padding: 16px;
     row-gap: 16px;
-}
-li > img {
-    height: 48px;
+    border-radius: 15px;
 }
 
+/* TAMANHO DAS IMAGENS DENTRO DOS QUADRADOS */
+figure > img {
+    height: 58px;
+}
 
+#inicio,
+#sobre__mim,
+#skills,
+#hobbies,
+#formacao,
+#experiencia {
+    scroll-margin-block: 88px;
+}
+
+.row__formacao__academica {
+    display: flex;
+    flex-direction: inline;
+    gap: 16px;
+}
+
+.lista__formacao__academica {
+    width: 368px;
+}
+
+.quadrado__formacao__academica {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 268px;
+    width: 368px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+.quadrado__formacao__academica > a > img {
+    height: auto;
+    width: 280px;
+}
 

@@ -9,9 +9,28 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
     width: 100vw;
     background-color: rgb(238, 238, 238);
     color: #464646;
     font-family: "Raleway", sans-serif;
     margin-top: 88px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    overflow-x: hidden;
 }
+
+/* COLOCAR COR EM TODOS OS LINKS DA PÁGINA E UM EFEITO AO PASSAR O MOUSE. */
+a {
+    color: #464646;
+}
+a:hover {
+    color: #98c3ff;
+    text-shadow: 2px 2px 2px 2px solid rgba(0, 0, 0,);
+    transition: 0.5s;
+}
+
+p {
+    text-align: justify;
+}
+
