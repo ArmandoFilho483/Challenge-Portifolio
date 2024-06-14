@@ -31,8 +31,7 @@ h1 > img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    max-width: 1136px;
+    width: 1136px;
     font-family: "Raleway", sans-serif;
     background-color: #eeeeee;
 }

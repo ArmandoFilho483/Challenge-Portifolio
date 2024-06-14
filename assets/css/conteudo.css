@@ -39,7 +39,7 @@ main {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    max-width: 1136px;
+    width: 1136px;
     gap: 16px;
 }
 .sobre__mim > img {
@@ -86,7 +86,10 @@ figure > img {
 }
 
 .lista__formacao__academica {
-    width: 368px;
+    max-width: 368px;
+}
+.lista__formacao__academica h4 {
+    margin-bottom: 15px;
 }
 
 .quadrado__formacao__academica {
