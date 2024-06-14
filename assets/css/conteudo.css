@@ -34,7 +34,8 @@ main {
 .sobre__mim,
 .skills__hobbies,
 .formacao__academica,
-.experiencia {
+.experiencia,
+.contato {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -75,7 +76,8 @@ figure > img {
 #skills,
 #hobbies,
 #formacao,
-#experiencia {
+#experiencia,
+#contato {
     scroll-margin-block: 88px;
 }
 
@@ -106,4 +108,75 @@ figure > img {
     height: auto;
     width: 280px;
 }
+
+.experiencia__profissional {
+    display: flex;
+    flex-direction: column;
+    width: 1136px;
+}
+.experiencia__profissional li {
+    margin-bottom: 54px;
+}
+
+/* CONTAINER COM CADA EXPERIENCIA. */
+.container__experiencia {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+}
+
+/* IFRAME */
+.iframe__container {
+    width: 752px;
+    height: 406px;
+    border: 1px solid black;
+    overflow: hidden;
+    z-index: 0;
+}
+iframe {
+    display: block;
+    width: 200%;
+    height: 200%;
+    transform: scale(0.5);
+    transform-origin: 0 0;
+    border: none;
+    z-index: 0;
+}
+
+/* INFORMAÇÕES E BOTOES AO LADO DO IFRAME. */
+.informacoes__container__experiencia {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.informacoes__container__experiencia h4 {
+    font-size: 22px;
+}
+
+/* BOTOES */
+.botoes__container__experiencia {
+    display: flex;
+    gap: 16px;
+    flex-direction: inline;
+}
+
+/* BOTAO INDIVIDUAL */
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 116px;
+    height: 51px;
+    border: 1px solid #2a7ae4;
+    border-radius: 5px;
+    color: white;
+    background-color: #2a7ae4;
+}
+.botao:hover {
+    color: #2a7ae4;
+    background-color: white;
+    transition: 0.5s;
+}
+
 

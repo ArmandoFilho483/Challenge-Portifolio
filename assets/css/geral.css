@@ -26,7 +26,6 @@ a {
 }
 a:hover {
     color: #98c3ff;
-    text-shadow: 2px 2px 2px 2px solid rgba(0, 0, 0,);
     transition: 0.5s;
 }
 
