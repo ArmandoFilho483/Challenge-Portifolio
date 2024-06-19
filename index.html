@@ -13,6 +13,8 @@
 </head>
 <body>
 
+    <!-- MENU FIXO -->
+
     <header>
         <nav class="menu">
             <h1 class="meu__nome">
@@ -46,8 +48,11 @@
             </ul>
         </nav>
     </header>
-<!-- NESSA PARTE TEM O TEXTO MAIOR, UMA DESCRIÇÃO E OS LINKS DAS REDES SOCIAIS. -->
+
+    <!-- TÍTULO E REDES SOCIAIS. -->
+
     <main id="inicio">
+
         <section class="apresentacao__foto">
             <div class="apresentacao__foto__div">
                 <div class="apresentacao">
@@ -68,14 +73,17 @@
                         </li>
                     </ul>
                 </div>
-                <!-- A FOTO QUE FICA DO LADO DIREITO DA TELA, EM FORMATO CIRCULAR. -->
+
+                <!-- MINHA FOTO -->
+
                 <figure class="foto__perfil">
                     <img src="./assets/img/minha__foto.jpg" alt="">
                 </figure>
             </div>
         </section>
 
-        <!-- AS MINHAS INFORMAÇÕES COMEÇAM AQUI. -->
+        <!-- SOBRE MIM -->
+
         <section class="informacoes__gerais">
             <section class="cor__fundo" id="sobre__mim">
                 <div class="sobre__mim">
@@ -87,7 +95,8 @@
                 </div>
             </section>
 
-            <!-- AQUI INICIAM AS SKILLS. -->
+            <!-- SKILLS -->
+
             <section class="cor__fundo" id="skills">
                 <div class="skills__hobbies">
                     <h3>Skills</h3>
@@ -162,7 +171,8 @@
                 </div>
             </section>
 
-            <!-- AQUI INICIAM OS HOBBIES. -->
+            <!-- HOBBIES -->
+
             <section class="cor__fundo" id="hobbies">
                 <div class="skills__hobbies">
                     <h3 id="hobbies">Hobbies</h3>
@@ -219,7 +229,8 @@
                 </div>
             </section>
                 
-            <!-- AQUI INICIAM AS FORMAÇÕES. -->
+            <!-- FORMAÇÕES -->
+
             <section class="cor__fundo" id="formacao">
                 <div class="formacao__academica">
                     <h3>Formação Acadêmica</h3>
@@ -256,7 +267,9 @@
                     </div>
                 </div>
             </section>
-            <!-- AQUI INICIAM AS EXPERIÊNCIAS. -->
+
+            <!-- EXPERIÊNCIAS PROFISSIONAIS -->
+
             <section class="cor__fundo" id="experiencia">
                 <div class="experiencia__profissional">
                     <h3>Experiência Profissional</h3>
@@ -294,17 +307,48 @@
                     </ul>
                 </div>
             </section>
+
+            <!-- CONTATO -->
+
+            <section class="cor__fundo" id="contato" >
+                <div class="contato">
+                    <div class="container__contato">
+                        <div class="imagem__contato">
+                            <img src="./assets/img/imagem__contato__3.svg" alt="">
+                        </div>
+                        <div class="box__formulario">
+                            <h3>Contato</h3>
+                            <p>Quer entrar em contato comigo?</p>
+                            <p>Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
+                            <form class="formulario" mailto:"armandopdff@gmail.com">
+                                <div class="item__formulario">
+                                    <label for="nome__completo">Nome</label>
+                                    <input type="text" id="nome__completo" autocomplete="off" required>
+                                </div>
+                                <div class="item__formulario">
+                                    <label for="email">E-mail</label>
+                                    <input type="email" id="email" autocomplete="off" required>
+                                </div>
+                                <div class="item__formulario">
+                                    <label for="assunto">Assunto</label>
+                                    <input type="text" id="assunto" autocomplete="off" required>
+                                </div>
+                                <div class="item__formulario">
+                                    <label for="mensagem">Mensagem</label>
+                                    <textarea name="mensagem" id="mensagem" rows="6" autocomplete="off"></textarea>
+                                </div>
+                                <div class="box__buttom">
+                                    <button class="botao btn-form" type="submit" >Enviar mensagem</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
     </main>
-    <section class="cor__fundo" id="contato" >
-        <div class="contato">
-            <h3>Contato</h3>
-            <form>
-                
-            </form>
-        </div>
 
-    </section>
+    <!-- RODAPÉ -->
 
     <footer class="rodape">
         <p>Desenvolvido por Armando Filho</p>

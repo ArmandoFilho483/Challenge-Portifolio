@@ -1,7 +1,5 @@
 
-main {
-    width: 100%;
-}
+
 .informacoes__gerais {
     display: flex;
     flex-direction: column;
@@ -9,12 +7,9 @@ main {
     align-items: center;
     width: 100%;
 }
-/* TEXTOS H3 COM MESMO TAMANHO*/
-.informacoes__gerais h3 {
-    font-size: 32px;
-}
 
-/* NESSE TRECHO SE MUDAM AS CORES DE FUNDO DAS SESSÕES, ENTRE CINZA E AZUL */
+
+/* CORES DE FUNDO DAS SESSÕES, ENTRE CINZA E AZUL */
 .cor__fundo {
     display: flex;
     align-items: center;
@@ -34,7 +29,7 @@ main {
 .sobre__mim,
 .skills__hobbies,
 .formacao__academica,
-.experiencia,
+.experiencia__profissional,
 .contato {
     display: flex;
     flex-direction: column;
@@ -166,8 +161,7 @@ iframe {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 116px;
-    height: 51px;
+    padding: 16px;
     border: 1px solid #2a7ae4;
     border-radius: 5px;
     color: white;
@@ -179,4 +173,102 @@ iframe {
     transition: 0.5s;
 }
 
+.container__contato {
+    display: flex;
+    gap: 16px;
+}
 
+/* CONTATO */
+
+.imagem__contato {
+    width: 464px;
+    height: 593px;
+}
+
+/* FORMULARIO */
+
+.box__formulario {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    max-height: 593px;
+    box-sizing: border-box;
+}
+
+.formulario {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 32px;
+}
+.item__formulario {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-bottom: 1px solid #2a7ae4;
+    margin-bottom: 15px;
+    min-height: 56px;
+    background-color: #eaf2fd;
+    box-sizing: border-box;
+}
+.item__formulario:nth-child(4) {
+    height: 100%;
+}
+.item__formulario input {
+    border: none;
+    background-color: #eaf2fd;
+    padding: 0 15px;
+    font-size: 20px;
+    outline: none;
+    padding-top: 20px;
+}
+
+.item__formulario label {
+    position: absolute;
+    left: 14px;
+    top: 20px;
+    cursor: text;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    color: rgb(129, 129, 129);
+}
+
+.item__formulario textarea {
+    background-color: #eaf2fd;
+    max-width: 631px;
+    min-height: 114px;
+    max-height: 114px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    padding: 0 15px;
+    padding-top: 21px;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+.item__formulario input:focus + label,
+.item__formulario input:not(:placeholder-shown) + label {
+    transform: translateY(-18px); /* Ajuste a transformação conforme necessário */
+    font-size: 12px;
+}
+
+.box__buttom {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.btn-form {
+    font-family: "Raleway", sans-serif;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-size: 16px;
+}

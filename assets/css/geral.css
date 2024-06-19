@@ -19,8 +19,11 @@ body {
     letter-spacing: 1px;
     overflow-x: hidden;
 }
+main {
+    width: 100%;
+}
 
-/* COLOCAR COR EM TODOS OS LINKS DA PÁGINA E UM EFEITO AO PASSAR O MOUSE. */
+/* COR DOS LINKS */
 a {
     color: #464646;
 }
@@ -29,7 +32,12 @@ a:hover {
     transition: 0.5s;
 }
 
+/* JUSTIFICAÇÃO DE TODOS OS PARÁGRAFOS */
 p {
     text-align: justify;
 }
 
+/* TAMANHO DE TODOS OS H3*/
+h3 {
+    font-size: 32px;
+}
