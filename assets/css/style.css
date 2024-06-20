@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/***** GERAL *****/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100vw;
+    background-color: rgb(238, 238, 238);
+    color: #464646;
+    font-family: "Raleway", sans-serif;
+    margin-top: 88px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    overflow-x: hidden;
+}
+
+/* MENU */
+header {
+    position: fixed;
+    display: flex;
+    height: 88px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+main {
+    width: 100%;
+}
+
+/* JUSTIFICAÇÃO DE TODOS OS PARÁGRAFOS */
+p {
+    text-align: justify;
+}
+
+/* TAMANHO DE TODOS OS H3*/
+h3 {
+    font-size: 32px;
+}
+
+/* CORES DE FUNDO DAS SESSÕES, ENTRE CINZA E AZUL */
+.cor__fundo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 64px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.cor__fundo:nth-child(even) {
+    background-color: #eaf2fd;
+}
+
+.container__flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 1136px;
+    gap: 16px;
+}
+
+/***** End Section *****/
+
+
+
+
+
+
+/***** MENU FIXO *****/
+
+/* MEU NOME NA NAVBAR */
+.meu__nome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+}
+
+/* IMAGEM DAS ESTRELAS AO LADO DO MEU NOME */
+.icone__nome {
+    height: 24px;
+    margin-right: 8px;
+}
+
+/* CONFIGURAÇÕES DO MENU. */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1136px;
+    font-family: "Raleway", sans-serif;
+    background-color: #eeeeee;
+}
+
+.lista__menu {
+    display: flex;
+    flex-direction: inline;
+    gap: 32px;
+    font-size: 16px;
+}
+
+.ancora__menu {
+    color: #464646;
+}
+
+.ancora__menu:hover {
+    color: #98c3ff;
+    transition: 0.5s;
+}
+/***** End Section *****/
+
+
+
+
+
+
+/***** PROPAGANDA PESSOAL *****/  
+
+.titulo__principal {
+    font-size: 52px;
+    line-height: 50px;
+}
+
+/* LINKS DAS REDES SOCIAIS */
+.links__redes__sociais {
+    display: flex;
+    gap: 32px;
+}
+.item__redes__sociais {
+    display: flex;
+    align-items: center;
+    color: #464646;
+}
+.item__redes__sociais:hover {
+    color: #98c3ff;
+    transition: 0.5s;
+}
+
+/* SETAS DOS LINKS DAS REDES SOCIAIS */
+.seta {
+    height: 24px;
+    margin-left: 4px;
+}
+
+/* FOTO REDONDA DO MEU PERFIL */
+.minha__foto {
+    width: 268px;
+    height: 268px;
+    border-radius: 90%;
+    margin: 10px;
+}
+
+.div__propaganda1 {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.div__propaganda2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+}
+
+.div__propaganda3 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-align: justify;
+}
+
+/***** End Section *****/
+
+
+
+
+
+
+/***** SOBRE MIM *****/
+
+.assinatura {
+    width: 100px;
+}
+
+/***** End Section *****/
+
+
+
+
+
+
+
+/* CONTEÚDO NA PARTE DO MEIO DA TELA. */
+
+.flexbox__sobre__mim > img {
+    height: 104px;
+}
+
+
+/* ORGANIZAÇÃO DOS QUADRADOS DAS SKILLS E HOBBIES */
+
+.organizacao__quadrado {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.quadrado {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    height: 174px;
+    width: 174px;
+    background-color: white;
+    padding: 16px;
+    row-gap: 16px;
+    border-radius: 15px;
+}
+
+
+/* TAMANHO DAS IMAGENS DENTRO DOS QUADRADOS */
+
+figure > img {
+    height: 58px;
+}
+
+#inicio,
+#sobre__mim,
+#skills,
+#hobbies,
+#formacao,
+#experiencia,
+#contato {
+    scroll-margin-block: 88px;
+}
+
+.row__formacao__academica {
+    display: flex;
+    flex-direction: inline;
+    gap: 16px;
+}
+
+.lista__formacao__academica {
+    max-width: 368px;
+}
+.lista__formacao__academica h4 {
+    margin-bottom: 15px;
+}
+
+.quadrado__formacao__academica {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 268px;
+    width: 368px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+.quadrado__formacao__academica > a > img {
+    height: auto;
+    width: 280px;
+}
+
+.experiencia__profissional {
+    display: flex;
+    flex-direction: column;
+    width: 1136px;
+}
+.experiencia__profissional li {
+    margin-bottom: 54px;
+}
+
+
+/* CONTAINER COM CADA EXPERIENCIA. */
+
+.container__experiencia {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+}
+
+
+/* IFRAME */
+
+.iframe__container {
+    width: 752px;
+    height: 406px;
+    border: 1px solid black;
+    overflow: hidden;
+    z-index: 0;
+}
+iframe {
+    display: block;
+    width: 200%;
+    height: 200%;
+    transform: scale(0.5);
+    transform-origin: 0 0;
+    border: none;
+    z-index: 0;
+}
+
+
+/* INFORMAÇÕES E BOTOES AO LADO DO IFRAME. */
+
+.informacoes__container__experiencia {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.informacoes__container__experiencia h4 {
+    font-size: 22px;
+}
+
+
+/* BOTOES */
+
+.botoes__container__experiencia {
+    display: flex;
+    gap: 16px;
+    flex-direction: inline;
+}
+
+
+/* BOTAO INDIVIDUAL */
+
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border: 1px solid #2a7ae4;
+    border-radius: 5px;
+    color: white;
+    background-color: #2a7ae4;
+}
+.botao:hover {
+    color: #2a7ae4;
+    background-color: white;
+    transition: 0.5s;
+}
+
+
+/* FORMULARIO */
+
+.container__contato {
+    display: flex;
+    flex-direction: inline;
+    gap: 16px;
+}
+
+
+/* IMAGEM DO FORMULARIO */
+
+.imagem__contato {
+    display: flex;
+    box-sizing: border-box;
+    width: 464px;
+    height: 593px;
+    border: 1px solid red;
+}
+.imagem__contato img {
+    width: 100%;
+}
+
+
+/* CAIXA DO FORMULARIO */
+
+
+
+/* BOTAO ENVIAR MENSAGEM */
+
+
+
+
+/* RODAPÉ */
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    gap: 15px;
+    height: 102px;
+    width: 100%;
+    bottom: 0;
+    left:0;
+}
