@@ -7,6 +7,16 @@ html {
     scroll-behavior: smooth;
 }
 
+#inicio,
+#sobre__mim,
+#skills,
+#hobbies,
+#formacao,
+#projeto,
+#contato {
+    scroll-margin-block: 88px;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -75,7 +85,7 @@ h3 {
     gap: 16px;
 }
 
-/***** End Section *****/
+/***** End GERAL *****/
 
 
 
@@ -123,7 +133,7 @@ h3 {
     color: #98c3ff;
     transition: 0.5s;
 }
-/***** End Section *****/
+/***** End MENU FIXO *****/
 
 
 
@@ -186,7 +196,7 @@ h3 {
     text-align: justify;
 }
 
-/***** End Section *****/
+/***** End PROPAGANDA PESSOAL *****/
 
 
 
@@ -199,20 +209,14 @@ h3 {
     width: 100px;
 }
 
-/***** End Section *****/
+/***** End SOBRE MIM *****/
 
 
 
 
 
 
-
-/* CONTEÚDO NA PARTE DO MEIO DA TELA. */
-
-.flexbox__sobre__mim > img {
-    height: 104px;
-}
-
+/***** SKILLS E HOBBIES *****/
 
 /* ORGANIZAÇÃO DOS QUADRADOS DAS SKILLS E HOBBIES */
 
@@ -233,37 +237,30 @@ h3 {
     row-gap: 16px;
     border-radius: 15px;
 }
-
-
-/* TAMANHO DAS IMAGENS DENTRO DOS QUADRADOS */
-
-figure > img {
+.imagem__quadrado {
     height: 58px;
 }
 
-#inicio,
-#sobre__mim,
-#skills,
-#hobbies,
-#formacao,
-#experiencia,
-#contato {
-    scroll-margin-block: 88px;
-}
+/***** End SKILLS E HOBBIES *****/
+
+
+
+
+
+
+/***** FORMACAO *****/ 
 
 .row__formacao__academica {
     display: flex;
     flex-direction: inline;
     gap: 16px;
 }
-
 .lista__formacao__academica {
     max-width: 368px;
 }
-.lista__formacao__academica h4 {
-    margin-bottom: 15px;
+.titulo__lista {
+    height: 60px;
 }
-
 .quadrado__formacao__academica {
     display: flex;
     align-items: center;
@@ -274,30 +271,28 @@ figure > img {
     border-radius: 10px;
     margin-bottom: 16px;
 }
-.quadrado__formacao__academica > a > img {
+.imagem__formacao {
     height: auto;
     width: 280px;
 }
+/***** End FORMACAO *****/
 
-.experiencia__profissional {
-    display: flex;
-    flex-direction: column;
-    width: 1136px;
-}
-.experiencia__profissional li {
+
+
+
+
+
+/***** PROJETO *****/ 
+
+.lista__projeto {
     margin-bottom: 54px;
 }
-
-
-/* CONTAINER COM CADA EXPERIENCIA. */
-
-.container__experiencia {
+.container__projeto {
     display: flex;
     align-items: center;
     width: 100%;
     gap: 16px;
 }
-
 
 /* IFRAME */
 
@@ -317,30 +312,19 @@ iframe {
     border: none;
     z-index: 0;
 }
-
-
-/* INFORMAÇÕES E BOTOES AO LADO DO IFRAME. */
-
-.informacoes__container__experiencia {
+.texto__container__projeto {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
-.informacoes__container__experiencia h4 {
+.titulo__projeto {
     font-size: 22px;
 }
-
-
-/* BOTOES */
-
-.botoes__container__experiencia {
+.container__botoes {
     display: flex;
     gap: 16px;
     flex-direction: inline;
 }
-
-
-/* BOTAO INDIVIDUAL */
 
 .botao {
     display: flex;
@@ -357,16 +341,23 @@ iframe {
     background-color: white;
     transition: 0.5s;
 }
+/***** End PROJETO *****/
 
 
-/* FORMULARIO */
 
+
+
+
+/***** CONTATO *****/
+.container__flexbox {
+    display: flex;
+    flex-direction: row;
+}
 .container__contato {
     display: flex;
     flex-direction: inline;
     gap: 16px;
 }
-
 
 /* IMAGEM DO FORMULARIO */
 
@@ -375,23 +366,19 @@ iframe {
     box-sizing: border-box;
     width: 464px;
     height: 593px;
-    border: 1px solid red;
 }
 .imagem__contato img {
     width: 100%;
 }
 
-
-/* CAIXA DO FORMULARIO */
-
-
-
-/* BOTAO ENVIAR MENSAGEM */
+/***** End CONTATO *****/
 
 
 
 
-/* RODAPÉ */
+
+
+/***** RODAPÉ *****/ 
 
 .rodape {
     display: flex;
@@ -406,3 +393,6 @@ iframe {
     bottom: 0;
     left:0;
 }
+
+/***** End RODAPÉ *****/
+
