@@ -1,12 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 /***** GERAL *****/
-
 html {
     scroll-behavior: smooth;
 }
-
 #inicio,
 #sobre__mim,
 #skills,
@@ -16,7 +13,11 @@ html {
 #contato {
     scroll-margin-block: 88px;
 }
-
+* {
+    font-family: "Raleway", sans-serif;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
 body {
     display: flex;
     flex-direction: column;
@@ -26,13 +27,9 @@ body {
     width: 100vw;
     background-color: rgb(238, 238, 238);
     color: #464646;
-    font-family: "Raleway", sans-serif;
     margin-top: 88px;
-    line-height: 1.5;
-    letter-spacing: 1px;
     overflow-x: hidden;
 }
-
 /* MENU */
 header {
     position: fixed;
@@ -47,21 +44,17 @@ header {
     left: 0;
     z-index: 1;
 }
-
 main {
     width: 100%;
 }
-
 /* JUSTIFICAÇÃO DE TODOS OS PARÁGRAFOS */
 p {
     text-align: justify;
 }
-
 /* TAMANHO DE TODOS OS H3*/
 h3 {
     font-size: 32px;
 }
-
 /* CORES DE FUNDO DAS SESSÕES, ENTRE CINZA E AZUL */
 .cor__fundo {
     display: flex;
@@ -71,11 +64,9 @@ h3 {
     width: 100%;
     box-sizing: border-box;
 }
-
 .cor__fundo:nth-child(even) {
     background-color: #eaf2fd;
 }
-
 .container__flexbox {
     display: flex;
     flex-direction: column;
@@ -84,7 +75,6 @@ h3 {
     max-width: 1136px;
     gap: 16px;
 }
-
 /***** End GERAL *****/
 
 
@@ -93,7 +83,6 @@ h3 {
 
 
 /***** MENU FIXO *****/
-
 /* MEU NOME NA NAVBAR */
 .meu__nome {
     display: flex;
@@ -101,13 +90,11 @@ h3 {
     align-items: center;
     font-family: "Raleway", sans-serif;
 }
-
 /* IMAGEM DAS ESTRELAS AO LADO DO MEU NOME */
 .icone__nome {
     height: 24px;
     margin-right: 8px;
 }
-
 /* CONFIGURAÇÕES DO MENU. */
 .navbar {
     display: flex;
@@ -117,18 +104,15 @@ h3 {
     font-family: "Raleway", sans-serif;
     background-color: #eeeeee;
 }
-
 .lista__menu {
     display: flex;
     flex-direction: inline;
     gap: 32px;
     font-size: 16px;
 }
-
 .ancora__menu {
     color: #464646;
 }
-
 .ancora__menu:hover {
     color: #98c3ff;
     transition: 0.5s;
@@ -141,12 +125,10 @@ h3 {
 
 
 /***** PROPAGANDA PESSOAL *****/  
-
 .titulo__principal {
     font-size: 52px;
     line-height: 50px;
 }
-
 /* LINKS DAS REDES SOCIAIS */
 .links__redes__sociais {
     display: flex;
@@ -161,13 +143,11 @@ h3 {
     color: #98c3ff;
     transition: 0.5s;
 }
-
 /* SETAS DOS LINKS DAS REDES SOCIAIS */
 .seta {
     height: 24px;
     margin-left: 4px;
 }
-
 /* FOTO REDONDA DO MEU PERFIL */
 .minha__foto {
     width: 268px;
@@ -175,27 +155,23 @@ h3 {
     border-radius: 90%;
     margin: 10px;
 }
-
 .div__propaganda1 {
     display: flex;
     justify-content: center;
     gap: 24px;
 }
-
 .div__propaganda2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 24px;
 }
-
 .div__propaganda3 {
     display: flex;
     flex-direction: column;
     gap: 24px;
     text-align: justify;
 }
-
 /***** End PROPAGANDA PESSOAL *****/
 
 
@@ -204,11 +180,9 @@ h3 {
 
 
 /***** SOBRE MIM *****/
-
 .assinatura {
     width: 100px;
 }
-
 /***** End SOBRE MIM *****/
 
 
@@ -217,9 +191,7 @@ h3 {
 
 
 /***** SKILLS E HOBBIES *****/
-
 /* ORGANIZAÇÃO DOS QUADRADOS DAS SKILLS E HOBBIES */
-
 .organizacao__quadrado {
     display: flex;
     flex-wrap: wrap;
@@ -240,7 +212,6 @@ h3 {
 .imagem__quadrado {
     height: 58px;
 }
-
 /***** End SKILLS E HOBBIES *****/
 
 
@@ -249,7 +220,6 @@ h3 {
 
 
 /***** FORMACAO *****/ 
-
 .row__formacao__academica {
     display: flex;
     flex-direction: inline;
@@ -283,7 +253,6 @@ h3 {
 
 
 /***** PROJETO *****/ 
-
 .lista__projeto {
     margin-bottom: 54px;
 }
@@ -293,9 +262,7 @@ h3 {
     width: 100%;
     gap: 16px;
 }
-
 /* IFRAME */
-
 .iframe__container {
     width: 752px;
     height: 406px;
@@ -325,7 +292,6 @@ iframe {
     gap: 16px;
     flex-direction: inline;
 }
-
 .botao {
     display: flex;
     align-items: center;
@@ -349,18 +315,11 @@ iframe {
 
 
 /***** CONTATO *****/
-.container__flexbox {
-    display: flex;
+/* CONTAINER GERAL, ONDE FICAM AS DUAS CAIXAS */
+.container__contato {
     flex-direction: row;
 }
-.container__contato {
-    display: flex;
-    flex-direction: inline;
-    gap: 16px;
-}
-
-/* IMAGEM DO FORMULARIO */
-
+/* CAIXA DA IMAGEM DO FORMULARIO */
 .imagem__contato {
     display: flex;
     box-sizing: border-box;
@@ -370,7 +329,82 @@ iframe {
 .imagem__contato img {
     width: 100%;
 }
+/* CAIXA DO FORMULÁRIO */
+.box__formulario {
+    display: flex;
+    flex-direction: column;
+    height: 593px;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-top: 20px;
+}
+.campo__formulario {
+    position: relative;
+    height: 50px;
+    background-color: #eaf2fd;
+    border: none;
+ }
+.campo__formulario:nth-child(4) {
+    height: 160px;
+}
+.label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    cursor: text;
+}
+.input{
+    padding: 15px 0 0 15px;
+    width: 96%;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    outline: none;
+    border: none;
+    background-color: #eaf2fd;
+    top: 15px;
+    left: 15px;
 
+}
+.textarea {
+    display: block;
+    box-sizing: border-box;
+    padding: 15px 0 0 15px;
+    width: 96%;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    height: 100%;
+    max-height: 160px;
+    width: 100%;
+    max-width: 625px;
+    outline: none;
+    border: none;
+    resize: none;
+    background-color: #eaf2fd;
+}
+.input:focus ~ .label,
+.textarea:focus ~ .label {
+    transform: translateY(-15px);
+    font-size: 12px;
+    color: #2a7ae4;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+.campo__formulario:focus-within {
+    border-bottom: 1px solid #2a7ae4;
+    transition: all 0.2s;
+}
+
+/* BOTÃO DO FORMULARIO */
+.buttom__formulario {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 16px;
+ }
 /***** End CONTATO *****/
 
 
@@ -379,7 +413,6 @@ iframe {
 
 
 /***** RODAPÉ *****/ 
-
 .rodape {
     display: flex;
     flex-direction: column;
@@ -393,6 +426,5 @@ iframe {
     bottom: 0;
     left:0;
 }
-
 /***** End RODAPÉ *****/
 

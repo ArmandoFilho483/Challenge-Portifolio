@@ -319,35 +319,33 @@
         <!-- CONTATO -->
 
         <section class="contato cor__fundo" id="contato">
-            <div class="container__flexbox">
-                <div class="imagem__contato">
+            <div class="container__flexbox container__contato">
+                <figure class="imagem__contato">
                     <img src="./assets/img/imagem__contato__3.svg" alt="">
-                </div>
+                </figure>
                 <div class="box__formulario">
                     <h3>Contato</h3>
                     <p>Quer entrar em contato comigo?</p>
                     <p>Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
                     <form action="https://api.elasticemail.com/contact/add?version=2" data-id="wumTtBDtZs" method="post" class="formulario" id="enviar__formulario">
-                        <div class="campo__formulario">
-                            <label class="label" for="nome__completo">Nome</label>
-                            <input class="input" type="text" id="nome__completo" autocomplete="off" required>
-                        </div>
-                        <div class="campo__formulario">
+                        <fieldset class="campo__formulario nome">
+                            <input class="input" type="text" name="nome" id="nome" autocomplete="off" required>
+                            <label class="label" for="nome">Nome</label>
+                        </fieldset>
+                        <fieldset class="campo__formulario email">
+                            <input class="input" type="email" name="email" id="email" autocomplete="off" required>
                             <label class="label" for="email">E-mail</label>
-                            <input class="input" type="email" id="email" autocomplete="off" required>
-                        </div>
-                        <div class="campo__formulario">
+                        </fieldset>
+                        <fieldset class="campo__formulario assunto">
+                            <input class="input" type="text" name="assunto" id="assunto" autocomplete="off" required>
                             <label class="label" for="assunto">Assunto</label>
-                            <input class="input" type="text" id="assunto" autocomplete="off" required>
-                        </div>
-                        <div class="campo__formulario">
+                        </fieldset>
+                        <fieldset class="campo__formulario mensagem">
+                            <textarea rows="5" class="textarea" name="mensagem" id="mensagem" autocomplete="off"></textarea>
                             <label class="label" for="mensagem">Mensagem</label>
-                            <textarea class="textarea" name="mensagem" id="mensagem" rows="6" autocomplete="off"></textarea>
-                        </div>
-                        <p>
-                        </p>
+                        </fieldset>
                         <div class="box__buttom">
-                            <button class="botao btn-form" type="submit">Enviar mensagem</button>
+                            <button class="botao buttom__formulario" type="submit">Enviar mensagem</button>
                         </div>
                     </form>
                 </div>
